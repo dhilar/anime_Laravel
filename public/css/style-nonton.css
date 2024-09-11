@@ -1,0 +1,76 @@
+/* In your css/style.css */
+
+/* General container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.anime-list {
+    padding: 20px 0;
+}
+
+.anime-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.anime-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.anime-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.anime-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.anime-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.watch-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.watch-now-btn:hover {
+    background: #0056b3;
+}
+
+.anime-item a {
+    text-decoration: none;
+    color: inherit;
+}
