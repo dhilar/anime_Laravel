@@ -1,5 +1,4 @@
 <script src="{{ asset('js/readMore.js') }}"></script>
-
 <section class="anime-highlights">
     <div class="container">
         <h2>Anime Highlights</h2>
@@ -13,9 +12,9 @@
                     <span class="full-desc" style="display:none;">Finn yang masuk ke dalam dunia kartu sihir.</span>
                     <a href="javascript:void(0);" class="read-more">Baca Selengkapnya</a>
                 </p>
-                <a href="{{ route('anime.nonton.index') }}" class="watch-now-btn">Tonton?</a>
-
+                <button class="watch-now-btn" onclick="window.location='{{ route('anime.nonton.index') }}'">Tonton?</button>
             </div>
+
             <div class="anime-item">
                 <img src="{{ asset('css/images/anime-2.jpeg') }}" alt="Anime 2">
                 <h3><a href="#">Charllote</a></h3>
@@ -25,8 +24,9 @@
                     <span class="full-desc" style="display:none;">dengan cerita penuh intrik dan konflik.</span>
                     <a href="javascript:void(0);" class="read-more">Baca Selengkapnya</a>
                 </p>
-                <a href="{{ url('/streaming/charllote') }}" class="watch-now-btn">Tonton?</a>
+                <button class="watch-now-btn" onclick="window.location='{{ url('anime.nonton.index') }}'">Tonton?</button>
             </div>
+
             <div class="anime-item">
                 <img src="{{ asset('css/images/anime-3.jpeg') }}" alt="Anime 3">
                 <h3><a href="#">Horimiya</a></h3>
@@ -36,7 +36,7 @@
                     <span class="full-desc" style="display:none;">yang berkembang antara dua orang remaja dengan latar belakang berbeda.</span>
                     <a href="javascript:void(0);" class="read-more">Baca Selengkapnya</a>
                 </p>
-                <a href="{{ url('/streaming/horimiya') }}" class="watch-now-btn">Tonton?</a>
+                <button class="watch-now-btn" onclick="window.location='{{ url('anime.nonton.index') }}'">Tonton?</button>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
     <div class="container">
         <div class="anime-header">
             <h1>{{ $animeNonton->title }}</h1>
-            <img src="{{ asset('storage/' . $animeNonton->image) }}" alt="{{ $animeNonton->title }}" class="anime-thumbnail">
+            <img src="{{ asset('' . $animeNonton->image) }}" alt="{{ $animeNonton->title }}" class="anime-thumbnail">
         </div>
         <p class="anime-description">{{ $animeNonton->description }}</p>
         <div class="video-player">

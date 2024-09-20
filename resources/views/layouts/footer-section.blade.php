@@ -10,10 +10,10 @@
             <div class="footer-section links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Anime List</a></li>
-                    <li><a href="#">Genres</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('list') }}">Anime List</a></li>
+                    <li><a href="{{ route('anime.nonton.index') }}">streaming?</a></li>
+                    {{-- <li><a href="{{ route('contact') }}">Contact Us</a></li> --}}
                 </ul>
             </div>
 
@@ -22,7 +22,7 @@
                 <div class="social-links">
                     <a href="#"><img src="{{ asset('css/icon/facebook.jpeg') }}" alt="img"></a>
                     <a href="#"><img src="{{ asset('css/icon/twiter.jpeg') }}" alt="img"></a>
-                    <a href="#"><img src="{{ asset('css/icon/instagram.jpeg') }}" alt="img"></a>
+                    <a href="#"><img src="{{ asset('css/icon/instagram.jpg') }}" alt="img"></a>
                 </div>
             </div>
         </div>

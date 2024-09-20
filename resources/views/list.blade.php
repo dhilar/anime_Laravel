@@ -31,6 +31,7 @@
               <img src="{{ asset($anime->image) }}" alt="{{ $anime->title }}" />
               <h3>{{ $anime->title }}</h3>
               <p>{{ $anime->description }}</p>
+              <button class="watch-now-btn" onclick="window.location='{{ route('anime.nonton.index') }}'">Tonton?</button>
             </div>
             @endforeach
           </div>

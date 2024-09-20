@@ -17,11 +17,13 @@ use App\Http\Controllers\AnimeNontonController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+// routes/web.php
 
-Route::get('/home', function () {
-    return view('home');
-});
+// Route untuk halaman Home dengan nama 'home'
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+// Route tambahan jika ingin halaman /home juga mengarah ke home
+
 
 
 Route::get('/anime-nonton', [AnimeNontonController::class, 'index'])->name('anime.nonton.index');
@@ -39,13 +41,17 @@ Route::get('/contact', function () {
 
 Route::post('/kontak-kirim', [ContactController::class, 'sendEmail'])->name('kontak.kirim');
 
+
 Route::get('/list', function () {
     return view('list');
 });
+
+Route::get('/list', [AnimeController::class, 'index'])->name('list');
+
 
 Route::get('informasi', function () {
     return view('informasi');
 });
 
-Route::get('/list', [AnimeController::class, 'index']);
+// Route::get('/list', [AnimeController::class, 'index']);
 
